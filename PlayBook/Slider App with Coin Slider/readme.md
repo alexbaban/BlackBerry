@@ -1,6 +1,6 @@
 # Slider App with Coin Slider
 
-## Folder Structure (using a "Pod")
+## Folder Structure (using a "Pod" '\documents\pod[number]')
 
 ``` html
 \css
