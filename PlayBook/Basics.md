@@ -54,4 +54,25 @@ window.onload = function () {
 
 ```
 
+## Load a JavaScript library at the top of main.js
 
+``` html
+- \js
+- \css
+- main.html
+- main.js
+- some.library.js
+
+```
+
+``` js
+// top of main.js
+;(function () {
+    var cameraPath = blackberry.io.dir.appDirs.shared.camera.path;
+    var sharedPath = blackberry.io.dir.getParentDirectory(cameraPath);
+    var appFolderName = blackberry.app.name.toLowerCase().replace(/\s+/g, "");
+    var appPath = sharedPath + "/documents/" + appFolderName;
+    document.write('<' + 'script src="' + appPath + '\/some.library.js' + '" type="text\/javascript"><' + '\/script>');
+})();
+
+```
