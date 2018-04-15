@@ -54,13 +54,13 @@ window.onload = function () {
 
 ```
 
-## Load JavaScript libs in order using app.js 
+## Load JavaScript libs in order using head.js 
 
 ### folder structure
 ``` html
 - \css
 - \js
-    - app.js
+    - head.js
 - jquery.min.js
 - main.html
 - main.js
@@ -68,7 +68,7 @@ window.onload = function () {
 
 ```
 
-### app.js
+### head.js
 ``` js
 // enable loading of local images
 var resolveImagesPath = "true";
@@ -80,7 +80,7 @@ var resolveImagesPath = "true";
     var appFolderName = blackberry.app.name.toLowerCase().replace(/\s+/g, "");
     var appPath = sharedPath + "/documents/" + appFolderName;
     document.write('<' + 'script src="' + appPath + '\/jquery.min.js' + '" type="text\/javascript"><' + '\/script>');
-    document.write('<' + 'script src="' + appPath + '\/coin-slider.min.js' + '" type="text\/javascript"><' + '\/script>');
+    document.write('<' + 'script src="' + appPath + '\/some.library.js' + '" type="text\/javascript"><' + '\/script>');
 })();
 
 
