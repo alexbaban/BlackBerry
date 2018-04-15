@@ -54,25 +54,34 @@ window.onload = function () {
 
 ```
 
-## Load a JavaScript library at the top of main.js
+## Load JavaScript libs in order using app.js 
 
+### folder structure
 ``` html
-- \js
 - \css
+- \js
+    - app.js
+- jquery.min.js
 - main.html
 - main.js
 - some.library.js
 
 ```
 
+### app.js
 ``` js
-// top of main.js
+// enable loading of local images
+var resolveImagesPath = "true";
+
+// load JavaScript libs
 ;(function () {
     var cameraPath = blackberry.io.dir.appDirs.shared.camera.path;
     var sharedPath = blackberry.io.dir.getParentDirectory(cameraPath);
     var appFolderName = blackberry.app.name.toLowerCase().replace(/\s+/g, "");
     var appPath = sharedPath + "/documents/" + appFolderName;
-    document.write('<' + 'script src="' + appPath + '\/some.library.js' + '" type="text\/javascript"><' + '\/script>');
+    document.write('<' + 'script src="' + appPath + '\/jquery.min.js' + '" type="text\/javascript"><' + '\/script>');
+    document.write('<' + 'script src="' + appPath + '\/coin-slider.min.js' + '" type="text\/javascript"><' + '\/script>');
 })();
+
 
 ```
