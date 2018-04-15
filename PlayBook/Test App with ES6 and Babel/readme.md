@@ -60,3 +60,76 @@ blackberry.app.event.onSwipeDown(function () {
 
 ## Result
 When the app is launched or on page refresh, `John Doe` shows in console. As expected the app runs very slow.
+
+## More test code
+
+### the keyword `let`
+
+``` html
+<!-- // main.html -->
+
+<script type="text/babel">
+    
+    var x = 10;
+
+    if (x) {
+        let x = 4;
+    }
+
+    console.log(x); 
+    // shows `10`
+
+</script>
+
+```
+
+### template strings `${variable}`
+``` html
+<!-- // main.html -->
+
+<script type="text/babel">
+    
+    function print (firstName) {
+        console.log(`Hello ${firstName}`);
+    }
+
+    print("Alexandru"); 
+    // shows `Hello Alexandru`
+
+</script>
+
+```
+
+### the spread operator `...`
+``` html
+<!-- // main.html -->
+
+<script type="text/babel">
+    
+    var cats = ["Tabby", "Siamese", "Persian"];
+    var dogs = ["Golden Retriever", "Pug", "Schnauzer"];
+    
+    var animals = ["Whale", "Giraffe", ...cats, "Snake", ...dogs, "Coyote"];
+
+    console.log(animals);
+    // shows `["Whale", "Giraffe", "Tabby", "Siamese", "Persian", "Snake", "Golden Retriever", "Pug", "Schnauzer", "Coyote"]`
+
+</script>
+
+```
+
+### arrow functions `=>`
+``` html
+<!-- // main.html -->
+
+<script type="text/babel">
+    
+    var studentList = (students) => console.log(students);
+    
+    studentList(["Joe", "Cindy", "Jeanne"]); 
+    // shows `["Joe", "Cindy", "Jeanne"]`
+
+</script>
+
+
+```
