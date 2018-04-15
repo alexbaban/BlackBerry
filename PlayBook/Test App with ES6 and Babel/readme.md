@@ -1,6 +1,6 @@
 # Test App with ES6 and Babel
 
-This is a test app with ECMAScript 6, using Babel (in browser transpiling). The result of the test is that, it runs, but it's very slow.
+This is a test app with ECMAScript 6, using Babel (in browser transpiling). This will force the browser to convert ES6 to ES5 at run time. It's expected that the app will run much slower.
 
 ## File structure (using a "Pod", \documents\pod[number])
 ``` 
@@ -47,7 +47,6 @@ blackberry.app.event.onSwipeDown(function () {
     };
 
     nameBuilder();
-    nameBuilder('Alex', 'Baban');
 
 </script>
 
@@ -58,3 +57,6 @@ blackberry.app.event.onSwipeDown(function () {
 // main.js (empty)
 
 ```
+
+## Result
+When the app is launched or on page refresh, `John Doe` shows in console. As expected the app runs very slow.
