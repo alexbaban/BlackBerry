@@ -39,6 +39,7 @@ blackberry.app.event.onSwipeDown(function () {
 
 <script type="text/babel">
     
+    // default function parameters example
     var nameBuilder = function (
         firstName = "John", 
         lastName = "Doe"
@@ -61,7 +62,7 @@ blackberry.app.event.onSwipeDown(function () {
 ## Result
 When the app is launched or on page refresh, `John Doe` shows in console. As expected the app runs very slow.
 
-## More test code
+## More examples
 
 ### the keyword `let`
 
