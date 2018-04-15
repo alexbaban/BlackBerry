@@ -1,6 +1,6 @@
 # Test App with ES6 and Babel
 
-This is a test app with ECMAScript 6, using Babel (in browser transpiling). This will force the browser to convert ES6 to ES5 at run time. It's expected that the app will run much slower.
+> This is a test app with ECMAScript 6, using Babel (in browser transpiling). This will force the browser to convert ES6 to ES5 at run time. It's expected that the app will run much slower.
 
 ## File structure (using a "Pod", \documents\pod[number])
 ``` 
