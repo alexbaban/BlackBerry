@@ -1,19 +1,19 @@
 # Slider App with Coin Slider
 
-## Folder Structure (using a "Pod" '\documents\pod[number]')
+## File Structure (using a "Pod" '\documents\pod[number]')
 
-``` html
-\css
-\css\coin-slider-styles.css
-\js
-\js\head.js
-\ales-krivec-1881-unsplash-1024.jpg
-\coin-slider.js
-\coin-slider.min.js
-\jquery.min.js
-\main.html
-\main.js
-\rob-morton-40594-unsplash-1024.jpg
+``` 
+css\
+css\coin-slider-styles.css
+js\
+js\head.js
+ales-krivec-1881-unsplash-1024.jpg
+coin-slider.js
+coin-slider.min.js
+jquery.min.js
+main.html
+main.js
+rob-morton-40594-unsplash-1024.jpg
 
 ```
 
