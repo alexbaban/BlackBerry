@@ -30,8 +30,8 @@ blackberry.app.event.onSwipeDown(function () {
     var sharedPath = blackberry.io.dir.getParentDirectory(cameraPath);
     var appFolderName = blackberry.app.name.toLowerCase().replace(/\s+/g, "");
     var appPath = sharedPath + "/documents/" + appFolderName;
-    document.write('<' + 'script src="' + appPath + '\/react.min.js' + '" type="text\/javascript"><' + '\/script>');
-    document.write('<' + 'script src="' + appPath + '\/react-dom.min.js' + '" type="text\/javascript"><' + '\/script>');
+    document.write('<script src="' + appPath + '\/react.min.js' + '"><\/script>');
+    document.write('<script src="' + appPath + '\/react-dom.min.js' + '"><\/script>');
 })();
 
 ```
