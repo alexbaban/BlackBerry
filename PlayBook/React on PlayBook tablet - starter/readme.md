@@ -1,7 +1,7 @@
 # React on Playbook tablet (starter)
 
-> Version 16+ does not work
-Download link for React and ReactDOM (version 15.6.2) (https://github.com/facebook/react/releases/tag/v15.6.2)
+> Version 16... does not work   
+> Version 15.6.2 works, download link: (https://github.com/facebook/react/releases/tag/v15.6.2)
 
 ## File structure (using a "Pod", \documents\pod[number])
 ```
