@@ -155,9 +155,11 @@ When the app is launched or on page refresh, `John Doe` shows in console. As exp
 
     var coolSkiVan = new Vehicle("cool ski van", 4);
     coolSkiVan.describeYourself();
+    // shows `I am a cool ski van with 4 wheels.`
 
     var someSedan = new Vehicle("sedan", 4);
     someSedan.describeYourself();
+    // shows `I am a sedan with 4 wheels.`
 
 </script>
 
