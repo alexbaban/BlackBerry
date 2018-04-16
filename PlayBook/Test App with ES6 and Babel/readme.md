@@ -132,5 +132,36 @@ When the app is launched or on page refresh, `John Doe` shows in console. As exp
 
 </script>
 
+```
+
+### classes
+``` html
+<!-- // main.html -->
+
+<script type="text/babel">
+    
+    class Vehicle {
+
+        constructor(description, wheels) {
+            this.description = description;
+            this.wheels = wheels;
+        }
+
+        describeYourself() {
+            console.log(`I am a ${this.description} with ${this.wheels} wheels.`);
+        }
+
+    }
+
+    var coolSkiVan = new Vehicle("cool ski van", 4);
+    coolSkiVan.describeYourself();
+
+    var someSedan = new Vehicle("sedan", 4);
+    someSedan.describeYourself();
+
+</script>
 
 ```
+
+
+
