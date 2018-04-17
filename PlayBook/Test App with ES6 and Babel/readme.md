@@ -35,7 +35,7 @@ blackberry.app.event.onSwipeDown(function () {
 
 ## main.html
 
-### default function parameters
+### default parameters
 ``` html
 <!-- // main.html -->
 
