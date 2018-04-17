@@ -34,12 +34,13 @@ blackberry.app.event.onSwipeDown(function () {
 ```
 
 ## main.html
+
+### default function parameters
 ``` html
 <!-- // main.html -->
 
 <script type="text/babel">
-    
-    // default function parameters example
+
     var nameBuilder = function (
         firstName = "John", 
         lastName = "Doe"
@@ -47,20 +48,18 @@ blackberry.app.event.onSwipeDown(function () {
         console.log(firstName + " " + lastName); 
     };
 
-    nameBuilder();
+    nameBuilder(); // console shows `John Doe`
 
 </script>
 
 ```
+> As expected..., the app runs very slow.
 
 ## main.js
 ``` js
 // main.js (empty)
 
 ```
-
-## Result
-When the app is launched or on page refresh, `John Doe` shows in console. As expected the app runs very slow.
 
 ## More examples
 
