@@ -54,34 +54,32 @@ window.onload = function () {
 
 ```
 
-## Load JavaScript libs in order using head.js 
+## Load external JS and CSS in order using head.js 
 
 ### folder structure
-``` html
-- \css
-- \js
-    - head.js
-- jquery.min.js
-- main.html
-- main.js
-- some.library.js
+```
+\app\
+\app\head.js
+\app\jquery.min.js
+\app\main.html
+\app\main.js
+\app\styles.css
 
 ```
 
 ### head.js
 ``` js
-// enable loading of local images
-var resolveImagesPath = "true";
+// App.RESOLVE_LOCAL_PATH = true;
 
-// load JavaScript libs
-;(function () {
-    var cameraPath = blackberry.io.dir.appDirs.shared.camera.path;
-    var sharedPath = blackberry.io.dir.getParentDirectory(cameraPath);
-    var appFolderName = blackberry.app.name.toLowerCase().replace(/\s+/g, "");
-    var appPath = sharedPath + "/documents/" + appFolderName;
-    document.write('<' + 'script src="' + appPath + '\/jquery.min.js' + '" type="text\/javascript"><' + '\/script>');
-    document.write('<' + 'script src="' + appPath + '\/some.library.js' + '" type="text\/javascript"><' + '\/script>');
+// reload page on swipe down
+blackberry.app.event.onSwipeDown(function () {
+    location.reload();
+});
+
+// load external JS and CSS
+; (function () {
+    document.write('<script src="' + App.ROOT_DIR_PATH + '\/app\/jquery.min.js"><\/script>');
+    document.write('<link rel="stylesheet" type="text/css" href="' + App.ROOT_DIR_PATH + '\/app\/styles.css">');
 })();
-
 
 ```
