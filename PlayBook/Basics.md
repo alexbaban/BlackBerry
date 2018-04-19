@@ -6,7 +6,6 @@
 
 window.addEventListener("load", function () {
     //statements to be executed
-
 }, false);
 
 ```
@@ -49,7 +48,6 @@ window.onload = function () {
     // statements to be executed
     var isOnline = ('blackberry' in window) ? blackberry.system.hasDataCoverage() : window.navigator.onLine;
     alert("Online: " + isOnline);
-
 }
 
 ```
@@ -69,6 +67,8 @@ window.onload = function () {
 
 ### head.js
 ``` js
+// head.js
+
 // App.RESOLVE_LOCAL_PATH = true;
 
 // reload page on swipe down
@@ -77,9 +77,7 @@ blackberry.app.event.onSwipeDown(function () {
 });
 
 // load external JS and CSS
-; (function () {
-    document.write('<script src="' + App.ROOT_DIR_PATH + '\/app\/jquery.min.js"><\/script>');
-    document.write('<link rel="stylesheet" type="text/css" href="' + App.ROOT_DIR_PATH + '\/app\/styles.css">');
-})();
+document.write('<script src="' + App.ROOT_DIR_PATH + '\/app\/jquery.min.js"><\/script>');
+document.write('<link rel="stylesheet" type="text/css" href="' + App.ROOT_DIR_PATH + '\/app\/styles.css">');
 
 ```
