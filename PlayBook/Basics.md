@@ -2,10 +2,16 @@
 
 ## Recognizing readiness
 
-``` js
+### The load event
 
-window.addEventListener("load", function () {
-    //statements to be executed
+(https://developer.mozilla.org/en-US/docs/Web/Events/load)
+
+> The load event is fired when a resource and its dependent resources have finished loading.
+
+``` js
+window.addEventListener("load", function (e) {
+    console.log("All `window` resources finished loading!");
+    console.log(e);
 }, false);
 
 ```
@@ -13,9 +19,9 @@ window.addEventListener("load", function () {
 or
 
 ``` js
-window.onload = function (evt) {
+window.onload = function (e) {
     // statements to be executed
-    console.log(evt);
+    console.log(e);
 }
 
 ```
