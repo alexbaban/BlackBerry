@@ -10,6 +10,8 @@
 ### css gradient
 from this:
 
+(https://css-tricks.com/css3-gradients/)
+
 ```css
   /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
   background-image:
