@@ -20,6 +20,20 @@ window.onload = function (evt) {
 
 ```
 
+### The DOMContentLoaded event
+
+(https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded)
+
+> The DOMContentLoaded event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading. A very different event load should be used only to detect a fully-loaded page. It is an incredibly popular mistake to use load where DOMContentLoaded would be much more appropriate.
+
+```js
+document.addEventListener('DOMContentLoaded', function(e) {
+    console.log('DOMContentLoaded event fired.');
+    console.log(e);
+});
+
+```
+
 ## Listen for swipe down from the top bezel 
 
 ``` js
