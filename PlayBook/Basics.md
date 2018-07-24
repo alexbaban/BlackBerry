@@ -26,6 +26,30 @@ window.onload = function (e) {
 
 ```
 
+or 
+
+```js
+// alternative to load event
+document.onreadystatechange = function () {
+  if (document.readyState === "complete") {
+    initApplication();
+  }
+}
+```
+
+or
+
+```
+document.addEventListener('readystatechange', event => {
+  if (event.target.readyState === "interactive") {
+    initLoader();
+  }
+  else if (event.target.readyState === "complete") {
+    initApp();
+  }
+});
+```
+
 ### The DOMContentLoaded event
 
 (https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded)
