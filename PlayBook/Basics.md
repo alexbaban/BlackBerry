@@ -125,3 +125,19 @@ document.write('<script src="' + App.ROOT_DIR_PATH + '\/app\/jquery.min.js"><\/s
 document.write('<link rel="stylesheet" type="text/css" href="' + App.ROOT_DIR_PATH + '\/app\/styles.css">');
 
 ```
+
+## App
+
+```js
+;
+(function () {
+    'use strict';
+
+    var App = window.App || {};
+
+    App.FOO = "bar";
+
+    window.App = App;
+
+})(window);
+```
