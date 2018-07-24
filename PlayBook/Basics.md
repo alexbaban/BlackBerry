@@ -131,6 +131,7 @@ document.write('<link rel="stylesheet" type="text/css" href="' + App.ROOT_DIR_PA
 ```js
 ;
 (function () {
+
     'use strict';
 
     var App = window.App || {};
