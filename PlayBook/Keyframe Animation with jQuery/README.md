@@ -1,7 +1,6 @@
 # Keyframe Animation with jQuery
 
 ## App structure
-
 ```
 app\
    \head.js
@@ -12,10 +11,7 @@ app\
    \license.txt
 ```
 
-------------------------
-
 ### `head.js`
-
 ```js
 // head.js
 
@@ -30,7 +26,6 @@ document.write('<' + 'script src="' + App.ROOT_DIR_PATH + '\/app\/jquery.min.js'
 ```
 
 ### `main.html`
-
 ```html
 <!-- // main.html -->
 
@@ -39,7 +34,6 @@ document.write('<' + 'script src="' + App.ROOT_DIR_PATH + '\/app\/jquery.min.js'
 ```
 
 ### `styles.css`
-
 ```css
 /* styles.css */
 
@@ -89,7 +83,6 @@ p {
 ```
 
 ### `main.js`
-
 ```js
 // main.js
 
