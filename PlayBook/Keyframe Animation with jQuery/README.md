@@ -25,7 +25,7 @@ document.write('<' + 'script src="' + App.ROOT_DIR_PATH + '\/app\/jquery.min.js'
 
 ```
 
-### `main.html`
+## main.html
 ```html
 <!-- // main.html -->
 
@@ -33,7 +33,7 @@ document.write('<' + 'script src="' + App.ROOT_DIR_PATH + '\/app\/jquery.min.js'
 
 ```
 
-### `styles.css`
+## styles.css
 ```css
 /* styles.css */
 
@@ -82,7 +82,7 @@ p {
 
 ```
 
-### `main.js`
+## main.js
 ```js
 // main.js
 
