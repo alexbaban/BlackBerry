@@ -92,6 +92,8 @@ document.onreadystatechange = function () {
 
 window.onload = function (event) {
 
+    'use strict';
+    
     console.log('window: ', event.type);
 
     var icons = [
