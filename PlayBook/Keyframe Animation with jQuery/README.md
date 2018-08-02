@@ -96,7 +96,7 @@ window.onload = function (event) {
     
     console.log('window: ', event.type);
 
-    var icons = [
+    var symbols = [
         '&#x2614;', // umbrella
         '&#x2708;', // airplane
         '&#x2694;', // swords
@@ -106,9 +106,9 @@ window.onload = function (event) {
     
     var container = $('#container'); // <div id="container"></div> is defined in main.html
     
-    // add boxes with icons on screen
-    icons.forEach(function (icon) {
-        container.append('<div class="box"><p>' + icon + '</p></div>');
+    // add boxes with symbols on screen
+    symbols.forEach(function (symbol) {
+        container.append('<div class="box"><p>' + symbol + '</p></div>');
     });
 
     // when touched slide to the right edge and back (three times)
