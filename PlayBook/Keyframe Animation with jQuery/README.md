@@ -133,7 +133,7 @@ window.onload = function (event) {
 
 ```
 
-## screenshot
+## screenshots
 <img src="https://github.com/alexbaban/BlackBerry/raw/master/PlayBook/Keyframe%20Animation%20with%20jQuery/Keyframe_Animation_with_jQuery.png" width="400" />   
    
 <img src="https://github.com/alexbaban/BlackBerry/raw/master/PlayBook/Keyframe%20Animation%20with%20jQuery/Keyframe_Animation_with_jQuery_animated.png" width="400" />
