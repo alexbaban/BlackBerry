@@ -11,7 +11,7 @@ app\
    \license.txt
 ```
 
-### `head.js`
+## head.js
 ```js
 // head.js
 
