@@ -133,6 +133,6 @@ body {
 
 ## screenshots
 
-![](Keyframe_Animation_with_jQuery.png)
+<img src="Keyframe_Animation_with_jQuery.png" width="400" />
 
 ![](Keyframe_Animation_with_jQuery_animated.png)
