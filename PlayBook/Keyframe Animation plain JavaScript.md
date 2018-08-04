@@ -1,4 +1,4 @@
-# Keyframe Animation
+# Keyframe Animation (plain JavaScript)
 
 ## App Structure
 
