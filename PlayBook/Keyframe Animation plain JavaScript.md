@@ -15,7 +15,7 @@
 ```html
 <!-- // main.html -->
 
-<div class="box"></div>
+<div id="container"></div>
 ```
 
 ### head.js
