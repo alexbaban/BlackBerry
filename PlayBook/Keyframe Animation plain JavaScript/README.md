@@ -57,7 +57,8 @@ window.onload = function (event) {
 
         ];
 
-        var container = document.querySelector('#container'); // <div id="container"></div> is defined in main.html
+        var container = document.querySelector('#container'); 
+        // <div id="container"></div> is defined in main.html
 
         // add boxes with symbols on screen
         symbols.forEach(function (symbol) {
